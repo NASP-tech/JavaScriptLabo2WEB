@@ -16,11 +16,11 @@ function processRequest(response) {
     })
 }
 
-async function studying() {
-    const response = await makeRequest('DEI')
-    console.log('Getting Answer ...')
-    const processedResponse = await processRequest(response)
-    console.log(processedResponse)
-}
-
-studying()
+makeRequest('DEI').then(response => {
+    console.log('Response Received')
+    return processRequest(response)
+}).then(processResponse => {
+    console.log(processResponse)
+}).catch(error => {
+    console.log(error)
+})
