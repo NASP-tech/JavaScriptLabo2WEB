@@ -1,10 +1,5 @@
-const itemSubjects = itemsArray.map((item) => {
-    return item.name
-})
 
-const itemSemester = itemsArray.map((item) => {
-    return item.semester
-})
-
-console.log(itemSubjects)
-console.log(itemSemester)
+function isPrime(primeNumber){
+    //Retornar verdadero si el numero es primo
+    for( let i=2; i<=primeNumber-1; i++){
+        if(primeNumber%i==0){
