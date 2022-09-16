@@ -19,6 +19,6 @@ const itemSemester = itemsArray.map((item) => {
     return item.semester
 })
 
-console.log(itemSubjects)
-console.log(itemSemester)
+console.log("Obtener solo las materias: \n", itemSubjects)
+console.log("Obtener solo los semestres de la carrera: \n", itemSemester)
 
